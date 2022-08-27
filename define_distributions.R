@@ -1,0 +1,7 @@
+distribution_for_main_prize_door<-stats::runif(n = 1000,0,1)
+distribution_for_player_choice<-stats::runif(n = 1000,0,1)
+probability_for_player_change_choice<-stats::runif(n = 1000,0,1)
+layout(matrix(c(1,1,2,3), 2, 2, byrow = TRUE))
+hist(distribution_for_main_prize_door, breaks = 25,)
+hist(distribution_for_player_choice, breaks = 25)
+hist(probability_for_player_change_choice, breaks = 25)
